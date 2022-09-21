@@ -1,7 +1,8 @@
 .parent {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 1200px; 
+    margin: 0 auto; 
   }
   .two, .one {
     position: absolute;
@@ -48,14 +49,26 @@
     clip-path: polygon(19% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
-#background-div {
+#right-background-div {
     position: relative; 
     width: 100%; 
     height: 100%; 
 }
 
 #ball-person {
-    position: absolute; 
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 50px;
   
 }
-  
+
+#left-background-div {
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#buttons-container {
+    position: absolute; 
+}

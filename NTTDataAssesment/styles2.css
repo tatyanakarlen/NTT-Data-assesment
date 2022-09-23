@@ -1,29 +1,28 @@
 .container {
-    height: 80vh;
-    width: 80vw;
-    margin: 0 auto;
-    position: relative; 
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
 }
 
-.container img {
-    max-width: 100%; 
-    max-height: 100%; 
-   
+#background-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #winners-text {
-    position: absolute;
-    color: white;
-    top: -4px;
-    left: 29px;
+  position: absolute;
+  color: white;
+  top: -4px;
+  left: 29px;
 }
 
 .left-side-btns {
-    width: 150px; 
+  width: 150px;
 }
 
 .btn-div {
-    position: absolute; 
+  position: absolute;
 }
 
 /* #lrg-btn-container {
@@ -34,20 +33,55 @@
 } */
 
 #lrg-btn-1 {
-    top: 176px;
-    left: 184px;
- } 
+  top: 176px;
+  left: 184px;
+}
 
 #lrg-btn-2 {
-    top: 230px;
-    left: 163px;
+  top: 230px;
+  left: 163px;
 }
- #lrg-btn-3 {
-    bottom: 195px;
-    left: 141px;
- }
+#lrg-btn-3 {
+  bottom: 195px;
+  left: 141px;
+}
 
- #lrg-btn-4 {
-    bottom: 141px;
-    left: 120px;
-  } 
+#lrg-btn-4 {
+  bottom: 141px;
+  left: 120px;
+}
+
+/* #right-side-ring {
+    width: 37%;
+    height: 300px;
+    top: 78px;
+    right: 86px;
+    border: solid red 1px;
+    background-color: red; 
+    float: right;
+    position: absolute;
+  } */
+
+.right-side-assets {
+  position: absolute;
+}
+
+#ring {
+    width: 27%;
+    top: 116px;
+    right: 141px;
+    opacity: 0.9;
+    z-index: 9;
+}
+
+#pie-company-culture {
+  width: 15%;
+  top: 55px;
+  right: 189px;
+}
+
+#pie-digital-forefront {
+    bottom: 126px;
+    width: 15%;
+    right: 190px;
+}

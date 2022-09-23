@@ -75,33 +75,56 @@
 }
 
 #pie-company-culture {
-  width: 15%;
-  top: 55px;
-  right: 189px;
+    width: 15%;
+    top: 55px;
+    right: 189px;
 }
 
 #pie-digital-forefront {
-    bottom: 126px;
+    bottom: 131px;
     width: 15%;
     right: 190px;
 }
 
 #pie-talent-focused {
     width: 18%;
-    top: 65px;
-    right: 90px;
+    top: 68px;
+    right: 94px;
     z-index: 9;
 }
 
 #pie-insight-driven {
     width: 18%;
-    top: 166px;
-    right: 82px;
+    top: 165px;
+    right: 88px;
     z-index: 9;
 }
 
 #pie-innovative {
-    
+    width: 18%;
+    bottom: 146px;
+    right: 96px; 
+}
+
+#pie-diff-brand {
+    width: 18%;
+    top: 237px;
+    right: 260px;
+    z-index: 9;
+}
+
+#pie-operation {
+    width: 18%;
+    top: 167px;
+    right: 265px;
+    z-index: 9;
+}
+
+#pie-strategic-partner {
+    width: 18%;
+    top: 72px;
+    right: 257px;
+    z-index: 9;
 }
 
 

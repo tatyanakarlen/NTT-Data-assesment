@@ -67,65 +67,78 @@
 }
 
 #ring {
-    width: 27%;
-    top: 116px;
-    right: 141px;
-    opacity: 0.9;
-    z-index: 9;
+  width: 27%;
+  top: 116px;
+  right: 141px;
+  opacity: 0.9;
+  z-index: 9;
 }
 
 #pie-company-culture {
-    width: 15%;
-    top: 55px;
-    right: 189px;
+  width: 15%;
+  top: 55px;
+  right: 189px;
 }
 
 #pie-digital-forefront {
-    bottom: 131px;
-    width: 15%;
-    right: 190px;
+  bottom: 131px;
+  width: 15%;
+  right: 190px;
 }
 
 #pie-talent-focused {
-    width: 18%;
-    top: 68px;
-    right: 94px;
-    z-index: 9;
+  width: 18%;
+  top: 68px;
+  right: 94px;
+  z-index: 9;
 }
 
 #pie-insight-driven {
-    width: 18%;
-    top: 165px;
-    right: 88px;
-    z-index: 9;
+  width: 18%;
+  top: 165px;
+  right: 90px;
+  z-index: 9;
 }
 
 #pie-innovative {
-    width: 18%;
-    bottom: 146px;
-    right: 96px; 
+  width: 18%;
+  bottom: 146px;
+  right: 96px;
+  z-index:9; 
 }
 
 #pie-diff-brand {
-    width: 18%;
-    top: 237px;
-    right: 260px;
-    z-index: 9;
+  width: 18%;
+  top: 237px;
+  right: 260px;
+  z-index: 9;
 }
 
 #pie-operation {
-    width: 18%;
-    top: 167px;
-    right: 265px;
-    z-index: 9;
+  width: 18%;
+  top: 167px;
+  right: 265px;
+  z-index: 9;
 }
 
 #pie-strategic-partner {
-    width: 18%;
-    top: 72px;
-    right: 257px;
-    z-index: 9;
+  width: 18%;
+  top: 72px;
+  right: 257px;
+  z-index: 9;
 }
 
+#text-balls {
+  width: 17%;
+  top: 156px;
+  right: 183px;
+  z-index: 9;
+}
 
+#ball-person {
+    width: 7%;
+    top: 196px;
+    right: 224px;
+    z-index: 9;
+}
 

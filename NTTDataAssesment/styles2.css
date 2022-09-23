@@ -22,25 +22,32 @@
     width: 150px; 
 }
 
-.main-btn-container {
-    position: absolute;
+.btn-div {
+    position: absolute; 
 }
+
+/* #lrg-btn-container {
+    position: absolute;
+    top: 176px;
+    left: 184px;
+
+} */
 
 #lrg-btn-1 {
     top: 176px;
     left: 184px;
-}
+ } 
 
 #lrg-btn-2 {
     top: 230px;
     left: 163px;
 }
  #lrg-btn-3 {
-    bottom: 240px;
+    bottom: 195px;
     left: 141px;
  }
 
  #lrg-btn-4 {
-    bottom: 186px;
+    bottom: 141px;
     left: 120px;
- }
+  } 

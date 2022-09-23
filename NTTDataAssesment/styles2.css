@@ -85,3 +85,24 @@
     width: 15%;
     right: 190px;
 }
+
+#pie-talent-focused {
+    width: 18%;
+    top: 65px;
+    right: 90px;
+    z-index: 9;
+}
+
+#pie-insight-driven {
+    width: 18%;
+    top: 166px;
+    right: 82px;
+    z-index: 9;
+}
+
+#pie-innovative {
+    
+}
+
+
+

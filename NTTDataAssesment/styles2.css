@@ -56,20 +56,20 @@
   left: 120px;
 }
 
-/* #right-side-ring {
-    width: 37%;
-    height: 300px;
-    top: 78px;
-    right: 86px;
+#right-side-ring {
+    width: 916px;
+    height: 968px;
+    top: 156px;
+    right: 195px;
     border: solid red 1px;
-    background-color: red; 
+    /* background-color: red; */
     float: right;
     position: absolute;
-  } */
+  }
 
-.right-side-assets {
+/* .right-side-assets {
   position: absolute;
-}
+} */
 
 #ring {
     width: 27%;
@@ -77,6 +77,7 @@
     right: 222px;
     opacity: 0.9;
     z-index: 9;
+    position: absolute; 
 }
 
 
@@ -84,12 +85,14 @@
     width: 15%;
     top: 76px;
     right: 296px;
+    position: absolute; 
 }
 
 #pie-digital-forefront {
     bottom: 108px;
     width: 15%;
     right: 295px;
+    position: absolute; 
 }
 
 #pie-talent-focused {
@@ -97,6 +100,7 @@
     top: 92px;
     right: 144px;
     z-index: 9;
+    position: absolute; 
 }
 
 #pie-insight-driven {
@@ -104,6 +108,7 @@
     top: 248px;
     right: 132px;
     z-index: 9;
+    position: absolute; 
 }
 
 #pie-innovative {
@@ -111,6 +116,7 @@
     bottom: 130px;
     right: 143px;
     z-index: 9;
+    position: absolute; 
 }
 
 #pie-diff-brand {
@@ -118,6 +124,7 @@
     top: 355px;
     right: 407px;
     z-index: 9;
+    position: absolute; 
 }
 
 #pie-operation {
@@ -125,6 +132,7 @@
     top: 247px;
     right: 425px;
     z-index: 9;
+    position: absolute; 
 }
 
 #pie-strategic-partner {
@@ -132,20 +140,23 @@
     top: 96px;
     right: 409px;
     z-index: 9;
+    position: absolute; 
 }
 
 #text-balls {
     width: 17%;
-    top: 216px;
+    top: 230px;
     right: 281px;
     z-index: 9;
+    position: absolute; 
 }
 
 #ball-person {
     width: 7%;
-    top: 280px;
+    top: 294px;
     right: 343px;
     z-index: 9;
+    position: absolute; 
 }
 
 

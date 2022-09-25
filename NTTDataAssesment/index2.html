@@ -15,7 +15,7 @@
 </div>
 <section class="left-section">
     <div id='left-btn-container'>
-    <div id='lrg-btn-1' class='btn-div'>
+    <div id='lrg-btn-1' class='btn-div lrg-btn-1'>
         <img  class="left-side-btns" src="images/button-customer@2x.png">
         </div>
         <div id='lrg-btn-2' class='btn-div'>
@@ -32,18 +32,18 @@
 </section>
 
 <section class="right-section">
-    <div  id="right-side-ring">
-      <img id="ring" class='right-side-assets' src="images/text-ring.png"> 
-      <img id="pie-company-culture" class='right-side-assets' src="images/pie-company-culture.png">
-      <img id="pie-digital-forefront" class='right-side-assets' src="images/pie-digital-forefront.png">
-      <img id="pie-talent-focused" class='right-side-assets' src="images/pie-talent-focused.png">
-      <img id="pie-insight-driven" class='right-side-assets' src="images/pie-insight-driven.png">
-      <img id="pie-innovative" class='right-side-assets' src="images/pie-innovative.png">
-      <img id="pie-diff-brand" class='right-side-assets' src="images/pie-diff-brand.png" >
-      <img id="pie-operation" class='right-side-assets' src="images/pie-operatinally-excellent.png">
-      <img id="pie-strategic-partner" class='right-side-assets' src="images/pie-stragic-partnerships.png">
-      <img id="text-balls" class='right-side-assets' src="images/text-balls.png">
-      <img id="ball-person" class='right-side-assets' src="images/ball-personPNG.png">
+    <div  id="right-side-ring" class="right-side-ring">
+      <img id="ring"  src="images/text-ring.png"> 
+      <img id="pie-company-culture" src="images/pie-company-culture.png"> 
+    <img id="pie-digital-forefront"  src="images/pie-digital-forefront.png">
+      <img id="pie-talent-focused" src="images/pie-talent-focused.png">
+      <img id="pie-insight-driven" src="images/pie-insight-driven.png">
+      <img id="pie-innovative" src="images/pie-innovative.png">
+      <img id="pie-diff-brand" src="images/pie-diff-brand.png" >
+      <img id="pie-operation" src="images/pie-operatinally-excellent.png">
+      <img id="pie-strategic-partner" src="images/pie-stragic-partnerships.png">
+      <img id="text-balls" src="images/text-balls.png">
+      <img id="ball-person" src="images/ball-personPNG.png">  
 
       
       
@@ -56,6 +56,41 @@
 
    
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+// $(document).ready(function(){
+//     $('#lrg-btn-1').on('click', function() {
+//         $('#right-side-ring').toggle(2000)
+//     })
+// })
 
+// $(document).ready(function(){
+//     $('#lrg-btn-1').on('click', function() {
+//         $('#right-side-ring').animate({width: '-=100px'})
+//     })
+// })
+
+// cache the selector (don't search the DOM for .scatterchartcolumn on each click)
+var col = $(".right-side-ring"); 
+// save the width
+
+$("#lrg-btn-1").click(function(){
+   
+    if (col.hasClass("shrunk")) { // check for presence of "shrunk" class
+        col.removeClass("shrunk") // toggle the class
+            .stop(true, true) // clear the animation queue
+            // .animate({width: '500px'});
+            .animate({ width: '+=916px' }, 1500)
+            
+    } else {
+        col.addClass("shrunk")
+            .stop(true, true)
+            .animate({width: '-=916px', }, 1500);
+            
+    }
+});
+
+
+</script>
 </body>
 </html>

@@ -15,18 +15,18 @@
 </div>
 <section class="left-section">
     <div id='left-btn-container'>
-    <div id='lrg-btn-1' class='btn-div lrg-btn-1'>
-        <img  class="left-side-btns" src="images/button-customer@2x.png">
-        </div>
-        <div id='lrg-btn-2' class='btn-div'>
-            <img  class="left-side-btns" src="images/button-customer@2x.png">
-            </div>
-            <div id='lrg-btn-3' class='btn-div'>
-                <img  class="left-side-btns" src="images/button-customer@2x.png">
-                </div>
-                <div id='lrg-btn-4' class='btn-div'>
-                    <img  class="left-side-btns" src="images/button-customer@2x.png">
-                    </div>
+    <!-- <div id='lrg-btn-1' class='btn-div'> -->
+        <img  id='btn1' class="left-side-btns" src="images/button-customer@2x.png">
+        <!-- </div> -->
+        <!-- <div id='lrg-btn-2' class='btn-div'> -->
+            <img  id='btn2' class="left-side-btns" src="images/button-customer@2x.png">
+            <!-- </div> -->
+            <!-- <div id='lrg-btn-3' class='btn-div'> -->
+                <img  id='btn3' class="left-side-btns" src="images/button-customer@2x.png">
+                <!-- </div> -->
+                <!-- <div id='lrg-btn-4' class='btn-div'> -->
+                    <img id='btn4' class="left-side-btns" src="images/button-customer@2x.png">
+                    <!-- </div> -->
                 </div>
 
 </section>
@@ -72,7 +72,38 @@ var copyBox = $(".right-side-pop-up")
 
 
 
-$("#lrg-btn-1").click(function(){
+$(".left-side-btns").click(function(e){
+    console.log(e.target.id)
+    let currentBtn = $(`#${e.target.id}`)
+    console.log(currentBtn)
+
+    if (currentBtn.hasClass("expanded")){
+        currentBtn.removeClass("expanded")
+        
+        .stop(true, true)
+        .animate({
+            width: '-=250px', 
+        }, 1000)
+    } else {
+        
+        currentBtn.addClass("expanded")
+        .stop(true,true)
+        .animate({
+            width: '+=250px'
+        }, 2000)
+
+    }
+
+    let otherBtns = $('.left-side-btns').not('.expanded')
+    console.log(otherBtns)
+    
+    otherBtns.animate({
+        width: '-=125px', 
+        top: 10
+    })
+
+
+    
 
     if (copyBox.hasClass("visible")) {
         copyBox.removeClass("visible")

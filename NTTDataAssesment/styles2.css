@@ -12,10 +12,15 @@
 }
 
 #winners-text {
-  position: absolute;
-  color: white;
-  top: -4px;
-  left: 29px;
+    position: absolute;
+    color: white;
+    top: -4px;
+    left: 204px;
+    font: normal normal normal 100px/100px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #F9F7D1;
+    opacity: 1;
+    font-size: 87px;
 }
 
 .left-side-btns {
@@ -54,40 +59,13 @@
   position: relative;
 }
 
-/* #lrg-btn-1 {
-    top: 673px;
-    left: 637px;
-    width: 496px;
-    height: 138px;
-}
 
-#lrg-btn-2 {
-    top: 828px;
-    left: 580px;
-    width: 496px;
-    height: 137px;
-}
-#lrg-btn-3 {
-    top: 984px;
-    left: 528px;
-    width: 496px;
-    height: 137px;
-}
-
-#lrg-btn-4 {
-    top: 1139px;
-    left: 476px;
-    width: 496px;
-    height: 137px;
-} */
 
 #right-side-ring {
   width: 1112px;
   height: 1113px;
   top: 156px;
   right: 195px;
-  border: solid red 1px;
-  /* background-color: red; */
   float: right;
   position: absolute;
 }
@@ -106,23 +84,23 @@
 }
 
 #pie-company-culture {
-    width: 30%;
-    top: 18px;
+    width: 31%;
+    top: 28px;
     right: 439px;
     position: absolute;
 }
 
 #pie-digital-forefront {
-    bottom: 75px;
-    width: 30%;
-    right: 441px;
+    bottom: 77px;
+    width: 31%;
+    right: 437px;
     position: absolute;
 }
 
 #pie-talent-focused {
     width: 38%;
-    top: 70px;
-    right: 144px;
+    top: 76px;
+    right: 149px;
     z-index: 9;
     position: absolute;
 }
@@ -130,7 +108,7 @@
 #pie-insight-driven {
     width: 38%;
     top: 368px;
-    right: 105px;
+    right: 111px;
     z-index: 9;
     position: absolute;
 }
@@ -155,33 +133,35 @@
 #pie-operation {
     width: 38%;
     top: 368px;
-    right: 696px;
+    right: 681px;
     z-index: 9;
     position: absolute;
 }
 
 #pie-strategic-partner {
     width: 38%;
-    top: 73px;
-    right: 650px;
+    top: 78px;
+    right: 647px;
     z-index: 9;
     position: absolute;
 }
 
+
 #text-balls {
-  width: 17%;
-  top: 230px;
-  right: 281px;
-  z-index: 9;
-  position: absolute;
+    width: 35%;
+    top: 340px;
+    right: 418px;
+    z-index: 9;
+    position: absolute;
 }
 
+
 #ball-person {
-  width: 7%;
-  top: 294px;
-  right: 343px;
-  z-index: 9;
-  position: absolute;
+    width: 14%;
+    top: 460px;
+    right: 539px;
+    z-index: 9;
+    position: absolute;
 }
 
 .right-side-pop-up {
@@ -189,8 +169,6 @@
   height: 968px;
   top: 269px;
   right: -1344px;
-  border: solid red 1px;
-  /* background-color: red; */
   float: right;
   position: absolute;
 }
@@ -207,4 +185,23 @@
   position: absolute;
   bottom: -107px;
   left: -350px;
+}
+
+.sml-btn-container {
+    top: 640px;
+    height: 84px;
+    width: 143px;
+    position: absolute;
+    right: 3px;
+    background: transparent;
+    background-color: rgb(4, 4, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 2px;
+}
+
+.arrow-icons{
+    width: 45%;
 }

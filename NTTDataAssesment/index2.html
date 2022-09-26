@@ -15,18 +15,10 @@
 </div>
 <section class="left-section">
     <div id='left-btn-container'>
-    <!-- <div id='lrg-btn-1' class='btn-div'> -->
         <img  id='btn1' class="left-side-btns" src="images/button-customer@2x.png">
-        <!-- </div> -->
-        <!-- <div id='lrg-btn-2' class='btn-div'> -->
             <img  id='btn2' class="left-side-btns" src="images/button-customer@2x.png">
-            <!-- </div> -->
-            <!-- <div id='lrg-btn-3' class='btn-div'> -->
                 <img  id='btn3' class="left-side-btns" src="images/button-customer@2x.png">
-                <!-- </div> -->
-                <!-- <div id='lrg-btn-4' class='btn-div'> -->
                     <img id='btn4' class="left-side-btns" src="images/button-customer@2x.png">
-                    <!-- </div> -->
                 </div>
 
 </section>
@@ -50,8 +42,8 @@
          <img id="copy-box" src="images/Copy-Box-Customer.png">
      </div>
      <div class="sml-btn-container">
-         <img class="arrow-icons" src="images/arrowleft.png">
-         <img class="arrow-icons" src="images/arrowright.png">
+         <img id="left-button" class="arrow-icons" src="images/arrowleft.png">
+         <img id="right-button" class="arrow-icons" src="images/arrowright.png">
      </div>
 
 </section>
@@ -62,19 +54,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script>
-// $(document).ready(function(){
-//     $('#lrg-btn-1').on('click', function() {
-//         $('#right-side-ring').toggle(2000)
-//     })
-// })
+
 
  $(document).ready(function(){
 var col = $(".right-side-ring"); 
 var copyBox = $(".right-side-pop-up")
-// col.hide()
-// copyBox.hide()
-
-
 
 $(".left-side-btns").click(function(e){
     console.log(e.target.id)
@@ -88,8 +72,6 @@ $(".left-side-btns").click(function(e){
         .animate({
             width: '-=350px', 
         }, 2000)
-
-   
     } else {
         
         currentBtn.addClass("expanded")
@@ -117,10 +99,7 @@ $(".left-side-btns").click(function(e){
         }, 1000)
     }
     
-    // otherBtns.animate({
-    //     width: '-=125px', 
-    //     top: 10
-    // })
+  
 
 
     
@@ -141,17 +120,15 @@ $(".left-side-btns").click(function(e){
         },  2000)
     }
     
-    // .animate({
-    //     right: 220
-        // right: -1344px;
+   
 
     
    
    
-    if (col.hasClass("shrunk")) { // check for presence of "shrunk" class
-        col.removeClass("shrunk") // toggle the class
-            .stop(true, true) // clear the animation queue
-            // .animate({width: '500px'});
+    if (col.hasClass("shrunk")) { 
+        col.removeClass("shrunk") 
+            .stop(true, true) 
+           
             .animate({ 
                 width: '+=916px', 
                 opacity: '3'
@@ -172,7 +149,117 @@ $(".left-side-btns").click(function(e){
             
     }
 });
+
+
+/////////////////////////////////
+
+$(".arrow-icons").click(function(){
+   console.log('arrow-icons-work')
+
+   let btn = $('#btn1')
+   console.log(btn.id)
+
+
+
+    if (btn.hasClass("expanded")){
+        btn.removeClass("expanded")
+        
+        .stop(true, true)
+        .animate({
+            width: '-=350px', 
+        }, 2000)
+    } else {
+        
+        btn.addClass("expanded")
+        .stop(true,true)
+        .animate({
+            width: '+=225px'
+        }, 2000)
+
+    }
+
+    let otherBtns = $('.left-side-btns').not('.expanded')
+    console.log(otherBtns)
+
+    if (otherBtns.hasClass("shrunkenBtns")) {
+        otherBtns.removeClass("shrunkenBtns")
+        .stop(true,true)
+        .animate({
+            width: '+=125px'
+        }, 1000)
+    } else {
+        otherBtns.addClass("shrunkenBtns")
+        .stop(true,true)
+        .animate({
+            width: '-=125px'
+        }, 1000)
+    }
+    
+  
+
+
+    
+
+    if (copyBox.hasClass("visible")) {
+        copyBox.removeClass("visible")
+        .stop(true, true)
+        .animate({
+        right: -1344
+        // right: -1344px;
+        }, 1000);
+
+    } else {
+        copyBox.addClass("visible")
+        .stop(true, true)
+        .animate({
+            right: 220
+        },  2000)
+    }
+    
+   
+
+    
+   
+   
+    if (col.hasClass("shrunk")) { 
+        col.removeClass("shrunk") 
+            .stop(true, true) 
+           
+            .animate({ 
+                width: '+=916px', 
+                opacity: '3'
+            
+            }, 1000)
+            
+            
+            
+    } else {
+        col.addClass("shrunk")
+            .stop(true, true)
+            .animate({
+                width: '-=916px', 
+                opacity: '0'
+            
+            }, 1500)
+            
+            
+    }
+});
+
+
+
+
+
  })
+
+
+ 
+
+
+
+
+
+ 
 
 
 

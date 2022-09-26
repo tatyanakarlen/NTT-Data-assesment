@@ -82,8 +82,8 @@ $(".left-side-btns").click(function(e){
         
         .stop(true, true)
         .animate({
-            width: '-=250px', 
-        }, 1000)
+            width: '-=350px', 
+        }, 2000)
     } else {
         
         currentBtn.addClass("expanded")
@@ -96,11 +96,25 @@ $(".left-side-btns").click(function(e){
 
     let otherBtns = $('.left-side-btns').not('.expanded')
     console.log(otherBtns)
+
+    if (otherBtns.hasClass("shrunkenBtns")) {
+        otherBtns.removeClass("shrunkenBtns")
+        .stop(true,true)
+        .animate({
+            width: '+=125px'
+        })
+    } else {
+        otherBtns.addClass("shrunkenBtns")
+        .stop(true,true)
+        .animate({
+            width: '-=125px'
+        })
+    }
     
-    otherBtns.animate({
-        width: '-=125px', 
-        top: 10
-    })
+    // otherBtns.animate({
+    //     width: '-=125px', 
+    //     top: 10
+    // })
 
 
     

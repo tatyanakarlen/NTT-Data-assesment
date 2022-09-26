@@ -1,269 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles2.css">
-</head>
-<body>
-<div class="container">
-    <img id="background-img" src="images/BKGND-01.jpg">
-    <div>
-    <h1 id="winners-text">Winners of tomorrow</h1>
-</div>
-<section class="left-section">
-    <div id='left-btn-container'>
-        <img  id='btn1' class="left-side-btns" src="images/button-customer@2x.png">
-            <img  id='btn2' class="left-side-btns" src="images/button-customer@2x.png">
-                <img  id='btn3' class="left-side-btns" src="images/button-customer@2x.png">
-                    <img id='btn4' class="left-side-btns" src="images/button-customer@2x.png">
-                </div>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img id="background-img" src="images/BKGND-01.jpg" />
+      <div>
+        <h1 id="winners-text">Winners of tomorrow</h1>
+      </div>
+      <section class="left-section">
+        <div id="left-btn-container">
+          <img
+            id="btn1"
+            class="left-side-btns"
+            src="images/button-customer@2x.png"
+          />
+          <img
+            id="btn2"
+            class="left-side-btns"
+            src="images/button-customer@2x.png"
+          />
+          <img
+            id="btn3"
+            class="left-side-btns"
+            src="images/button-customer@2x.png"
+          />
+          <img
+            id="btn4"
+            class="left-side-btns"
+            src="images/button-customer@2x.png"
+          />
+        </div>
+      </section>
 
-</section>
+      <section class="right-section">
+        <div id="right-side-ring" class="right-side-ring">
+          <img id="ring" src="images/text-ring.png" />
+          <img id="pie-company-culture" src="images/pie-company-culture.png" />
+          <img
+            id="pie-digital-forefront"
+            src="images/pie-digital-forefront.png"
+          />
+          <img id="pie-talent-focused" src="images/pie-talent-focused.png" />
+          <img id="pie-insight-driven" src="images/pie-insight-driven.png" />
+          <img id="pie-innovative" src="images/pie-innovative.png" />
+          <img id="pie-diff-brand" src="images/pie-diff-brand.png" />
+          <img id="pie-operation" src="images/pie-operatinally-excellent.png" />
+          <img
+            id="pie-strategic-partner"
+            src="images/pie-stragic-partnerships.png"
+          />
+          <img id="text-balls" src="images/text-balls.png" />
+          <img id="ball-person" src="images/ball-personPNG.png" />
+        </div>
+        <div class="right-side-pop-up">
+          <img id="WOT-pic-01" src="images/WOT-pic-01-customer.png" />
+          <img id="copy-box" src="images/Copy-Box-Customer.png" />
+        </div>
+        <div class="sml-btn-container">
+          <img
+            id="left-button"
+            class="arrow-icons"
+            src="images/arrowleft.png"
+          />
+          <img
+            id="right-button"
+            class="arrow-icons"
+            src="images/arrowright.png"
+          />
+        </div>
+      </section>
+    </div>
 
-<section class="right-section">
-    <div  id="right-side-ring" class="right-side-ring">
-      <img id="ring"  src="images/text-ring.png"> 
-      <img id="pie-company-culture" src="images/pie-company-culture.png">  
-     <img id="pie-digital-forefront"  src="images/pie-digital-forefront.png">
-     <img id="pie-talent-focused" src="images/pie-talent-focused.png"> 
-      <img id="pie-insight-driven" src="images/pie-insight-driven.png">
-       <img id="pie-innovative" src="images/pie-innovative.png">
-      <img id="pie-diff-brand" src="images/pie-diff-brand.png" >   
-      <img id="pie-operation" src="images/pie-operatinally-excellent.png"> 
-      <img id="pie-strategic-partner" src="images/pie-stragic-partnerships.png">
-      <img id="text-balls" src="images/text-balls.png">
-       <img id="ball-person" src="images/ball-personPNG.png">     
-     </div>
-     <div class="right-side-pop-up">
-         <img id="WOT-pic-01" src="images/WOT-pic-01-customer.png">
-         <img id="copy-box" src="images/Copy-Box-Customer.png">
-     </div>
-     <div class="sml-btn-container">
-         <img id="left-button" class="arrow-icons" src="images/arrowleft.png">
-         <img id="right-button" class="arrow-icons" src="images/arrowright.png">
-     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var col = $('.right-side-ring');
+        var copyBox = $('.right-side-pop-up');
 
-</section>
-    
-      
+        $('.left-side-btns').click(function (e) {
+          console.log(e.target.id);
+          let currentBtn = $(`#${e.target.id}`);
+          console.log(currentBtn);
 
-   
+          if (currentBtn.hasClass('expanded')) {
+            currentBtn
+              .removeClass('expanded')
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
+              .stop(true, true)
+              .animate(
+                {
+                  width: '-=350px',
+                },
+                2000
+              );
+          } else {
+            currentBtn.addClass('expanded').stop(true, true).animate(
+              {
+                width: '+=225px',
+              },
+              2000
+            );
+          }
 
+          let otherBtns = $('.left-side-btns').not('.expanded');
+          console.log(otherBtns);
 
- $(document).ready(function(){
-var col = $(".right-side-ring"); 
-var copyBox = $(".right-side-pop-up")
+          if (otherBtns.hasClass('shrunkenBtns')) {
+            otherBtns.removeClass('shrunkenBtns').stop(true, true).animate(
+              {
+                width: '+=125px',
+              },
+              1000
+            );
+          } else {
+            otherBtns.addClass('shrunkenBtns').stop(true, true).animate(
+              {
+                width: '-=125px',
+              },
+              1000
+            );
+          }
 
-$(".left-side-btns").click(function(e){
-    console.log(e.target.id)
-    let currentBtn = $(`#${e.target.id}`)
-    console.log(currentBtn)
+          if (copyBox.hasClass('visible')) {
+            copyBox.removeClass('visible').stop(true, true).animate(
+              {
+                right: -1344,
+              },
+              1000
+            );
+          } else {
+            copyBox.addClass('visible').stop(true, true).animate(
+              {
+                right: 220,
+              },
+              2000
+            );
+          }
 
-    if (currentBtn.hasClass("expanded")){
-        currentBtn.removeClass("expanded")
-        
-        .stop(true, true)
-        .animate({
-            width: '-=350px', 
-        }, 2000)
-    } else {
-        
-        currentBtn.addClass("expanded")
-        .stop(true,true)
-        .animate({
-            width: '+=225px'
-        }, 2000)
+          if (col.hasClass('shrunk')) {
+            col
+              .removeClass('shrunk')
+              .stop(true, true)
 
-    }
+              .animate(
+                {
+                  width: '+=916px',
+                  opacity: '3',
+                },
+                1000
+              );
+          } else {
+            col.addClass('shrunk').stop(true, true).animate(
+              {
+                width: '-=916px',
+                opacity: '0',
+              },
+              1500
+            );
+          }
+        });
 
-    let otherBtns = $('.left-side-btns').not('.expanded')
-    console.log(otherBtns)
+        $('.arrow-icons').click(function () {
+          console.log('arrow-icons-work');
 
-    if (otherBtns.hasClass("shrunkenBtns")) {
-        otherBtns.removeClass("shrunkenBtns")
-        .stop(true,true)
-        .animate({
-            width: '+=125px'
-        }, 1000)
-    } else {
-        otherBtns.addClass("shrunkenBtns")
-        .stop(true,true)
-        .animate({
-            width: '-=125px'
-        }, 1000)
-    }
-    
-  
+          let btn = $('#btn1');
+          console.log(btn.id);
 
+          if (btn.hasClass('expanded')) {
+            btn
+              .removeClass('expanded')
 
-    
+              .stop(true, true)
+              .animate(
+                {
+                  width: '-=350px',
+                },
+                2000
+              );
+          } else {
+            btn.addClass('expanded').stop(true, true).animate(
+              {
+                width: '+=225px',
+              },
+              2000
+            );
+          }
 
-    if (copyBox.hasClass("visible")) {
-        copyBox.removeClass("visible")
-        .stop(true, true)
-        .animate({
-        right: -1344
-        // right: -1344px;
-        }, 1000);
+          let otherBtns = $('.left-side-btns').not('.expanded');
+          console.log(otherBtns);
 
-    } else {
-        copyBox.addClass("visible")
-        .stop(true, true)
-        .animate({
-            right: 220
-        },  2000)
-    }
-    
-   
+          if (otherBtns.hasClass('shrunkenBtns')) {
+            otherBtns.removeClass('shrunkenBtns').stop(true, true).animate(
+              {
+                width: '+=125px',
+              },
+              1000
+            );
+          } else {
+            otherBtns.addClass('shrunkenBtns').stop(true, true).animate(
+              {
+                width: '-=125px',
+              },
+              1000
+            );
+          }
 
-    
-   
-   
-    if (col.hasClass("shrunk")) { 
-        col.removeClass("shrunk") 
-            .stop(true, true) 
-           
-            .animate({ 
-                width: '+=916px', 
-                opacity: '3'
-            
-            }, 1000)
-            
-            
-            
-    } else {
-        col.addClass("shrunk")
-            .stop(true, true)
-            .animate({
-                width: '-=916px', 
-                opacity: '0'
-            
-            }, 1500)
-            
-            
-    }
-});
+          if (copyBox.hasClass('visible')) {
+            copyBox.removeClass('visible').stop(true, true).animate(
+              {
+                right: -1344,
+              },
+              1000
+            );
+          } else {
+            copyBox.addClass('visible').stop(true, true).animate(
+              {
+                right: 220,
+              },
+              2000
+            );
+          }
 
+          if (col.hasClass('shrunk')) {
+            col
+              .removeClass('shrunk')
+              .stop(true, true)
 
-/////////////////////////////////
-
-$(".arrow-icons").click(function(){
-   console.log('arrow-icons-work')
-
-   let btn = $('#btn1')
-   console.log(btn.id)
-
-
-
-    if (btn.hasClass("expanded")){
-        btn.removeClass("expanded")
-        
-        .stop(true, true)
-        .animate({
-            width: '-=350px', 
-        }, 2000)
-    } else {
-        
-        btn.addClass("expanded")
-        .stop(true,true)
-        .animate({
-            width: '+=225px'
-        }, 2000)
-
-    }
-
-    let otherBtns = $('.left-side-btns').not('.expanded')
-    console.log(otherBtns)
-
-    if (otherBtns.hasClass("shrunkenBtns")) {
-        otherBtns.removeClass("shrunkenBtns")
-        .stop(true,true)
-        .animate({
-            width: '+=125px'
-        }, 1000)
-    } else {
-        otherBtns.addClass("shrunkenBtns")
-        .stop(true,true)
-        .animate({
-            width: '-=125px'
-        }, 1000)
-    }
-    
-  
-
-
-    
-
-    if (copyBox.hasClass("visible")) {
-        copyBox.removeClass("visible")
-        .stop(true, true)
-        .animate({
-        right: -1344
-        // right: -1344px;
-        }, 1000);
-
-    } else {
-        copyBox.addClass("visible")
-        .stop(true, true)
-        .animate({
-            right: 220
-        },  2000)
-    }
-    
-   
-
-    
-   
-   
-    if (col.hasClass("shrunk")) { 
-        col.removeClass("shrunk") 
-            .stop(true, true) 
-           
-            .animate({ 
-                width: '+=916px', 
-                opacity: '3'
-            
-            }, 1000)
-            
-            
-            
-    } else {
-        col.addClass("shrunk")
-            .stop(true, true)
-            .animate({
-                width: '-=916px', 
-                opacity: '0'
-            
-            }, 1500)
-            
-            
-    }
-});
-
-
-
-
-
- })
-
-
- 
-
-
-
-
-
- 
-
-
-
-
-</script>
-</body>
+              .animate(
+                {
+                  width: '+=916px',
+                  opacity: '3',
+                },
+                1000
+              );
+          } else {
+            col.addClass('shrunk').stop(true, true).animate(
+              {
+                width: '-=916px',
+                opacity: '0',
+              },
+              1500
+            );
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

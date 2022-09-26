@@ -21,6 +21,7 @@
 .left-side-btns {
   width: 400px;
   padding:10px; 
+ 
 }
 
 .btn-div {
@@ -38,12 +39,11 @@
     position: absolute;
     height: 600px;
     width: 450px; 
-    border: 5px solid yellow;
     top: 638px;
     display: flex;
     flex-direction: column;
     left: 580px;
-    transform: skew(-12deg, 0deg);
+   
 }
 
 #left-btn-container .image {
@@ -54,7 +54,7 @@
   position: relative;
 }
 
-#lrg-btn-1 {
+/* #lrg-btn-1 {
     top: 673px;
     left: 637px;
     width: 496px;
@@ -79,11 +79,11 @@
     left: 476px;
     width: 496px;
     height: 137px;
-}
+} */
 
 #right-side-ring {
-  width: 916px;
-  height: 968px;
+  width: 1112px;
+  height: 1113px;
   top: 156px;
   right: 195px;
   border: solid red 1px;
@@ -97,74 +97,75 @@
 } */
 
 #ring {
-  width: 27%;
-  top: 173px;
-  right: 222px;
-  opacity: 0.9;
-  z-index: 9;
-  position: absolute;
+    width: 60%;
+    top: 202px;
+    right: 281px;
+    opacity: 0.9;
+    z-index: 9;
+    position: absolute;
 }
 
 #pie-company-culture {
-  width: 15%;
-  top: 76px;
-  right: 296px;
-  position: absolute;
+    width: 30%;
+    top: 18px;
+    right: 439px;
+    position: absolute;
 }
 
 #pie-digital-forefront {
-  bottom: 108px;
-  width: 15%;
-  right: 295px;
-  position: absolute;
+    bottom: 75px;
+    width: 30%;
+    right: 441px;
+    position: absolute;
 }
 
 #pie-talent-focused {
-  width: 18%;
-  top: 92px;
-  right: 144px;
-  z-index: 9;
-  position: absolute;
+    width: 38%;
+    top: 70px;
+    right: 144px;
+    z-index: 9;
+    position: absolute;
 }
 
 #pie-insight-driven {
-  width: 18%;
-  top: 248px;
-  right: 132px;
-  z-index: 9;
-  position: absolute;
+    width: 38%;
+    top: 368px;
+    right: 105px;
+    z-index: 9;
+    position: absolute;
 }
 
+
 #pie-innovative {
-  width: 18%;
-  bottom: 130px;
-  right: 143px;
-  z-index: 9;
-  position: absolute;
+    width: 38%;
+    bottom: 109px;
+    right: 143px;
+    z-index: 9;
+    position: absolute;
 }
 
 #pie-diff-brand {
-  width: 18%;
-  top: 355px;
-  right: 407px;
-  z-index: 9;
-  position: absolute;
+    width: 38%;
+    bottom: 115px; 
+    right: 650px;
+    z-index: 9;
+    position: absolute;
 }
 
 #pie-operation {
-  width: 18%;
-  top: 247px;
-  right: 425px;
-  z-index: 9;
-  position: absolute;
+    width: 38%;
+    top: 368px;
+    right: 696px;
+    z-index: 9;
+    position: absolute;
 }
 
 #pie-strategic-partner {
-  width: 18%;
-  top: 96px;
-  right: 409px;
-  z-index: 9;
-  position: absolute;
+    width: 38%;
+    top: 73px;
+    right: 650px;
+    z-index: 9;
+    position: absolute;
 }
 
 #text-balls {

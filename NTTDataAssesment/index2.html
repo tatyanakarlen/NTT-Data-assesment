@@ -44,11 +44,11 @@
       <img id="pie-strategic-partner" src="images/pie-stragic-partnerships.png">
       <img id="text-balls" src="images/text-balls.png">
       <img id="ball-person" src="images/ball-personPNG.png">  
-
-      
-      
-      
-    </div>
+     </div>
+     <div class="right-side-pop-up">
+         <img id="WOT-pic-01" src="images/WOT-pic-01-customer.png">
+         <img id="copy-box" src="images/Copy-Box-Customer.png">
+     </div>
 
 </section>
     
@@ -64,31 +64,66 @@
 //     })
 // })
 
-// $(document).ready(function(){
-//     $('#lrg-btn-1').on('click', function() {
-//         $('#right-side-ring').animate({width: '-=100px'})
-//     })
-// })
-
-// cache the selector (don't search the DOM for .scatterchartcolumn on each click)
+ $(document).ready(function(){
 var col = $(".right-side-ring"); 
-// save the width
+var copyBox = $(".right-side-pop-up")
+// col.hide()
+// copyBox.hide()
+
+
 
 $("#lrg-btn-1").click(function(){
+
+    if (copyBox.hasClass("visible")) {
+        copyBox.removeClass("visible")
+        .stop(true, true)
+        .animate({
+        right: -1344
+        // right: -1344px;
+        }, 1000);
+
+    } else {
+        copyBox.addClass("visible")
+        .stop(true, true)
+        .animate({
+            right: 220
+        },  2000)
+    }
+    
+    // .animate({
+    //     right: 220
+        // right: -1344px;
+
+    
+   
    
     if (col.hasClass("shrunk")) { // check for presence of "shrunk" class
         col.removeClass("shrunk") // toggle the class
             .stop(true, true) // clear the animation queue
             // .animate({width: '500px'});
-            .animate({ width: '+=916px' }, 1500)
+            .animate({ 
+                width: '+=916px', 
+                opacity: '3'
+            
+            }, 1000)
+            
+            
             
     } else {
         col.addClass("shrunk")
             .stop(true, true)
-            .animate({width: '-=916px', }, 1500);
+            .animate({
+                width: '-=916px', 
+                opacity: '0'
+            
+            }, 1500)
+            
             
     }
 });
+ })
+
+
 
 
 </script>
